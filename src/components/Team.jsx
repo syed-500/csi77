@@ -87,7 +87,7 @@ const Team = ({ teamMembers }) => {
     // )
     return (
       <>
-      <div className='w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-10 mr-auto '>
+      <div className='w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25 mr-auto '>
         <Header />
         <br />
         <br />
@@ -98,7 +98,7 @@ const Team = ({ teamMembers }) => {
         </div>
         <div className='h-18 bg-white'></div>
         <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='our__team mb-[60px] mx-auto h-full w-full sm:w-[90%] md:w-[85%] lg:w-[100%]'>
+        <section className='our__team mb-[60px] mx-auto h-full w-full sm:w-[70%] md:w-[85%] lg:w-[100%]'>
           <div className='container'>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:m-auto gap-10 gap-y-10 mb-16">
               {/* mapping over each of the cards with content  */}
@@ -124,7 +124,7 @@ const Team = ({ teamMembers }) => {
 function Card({ content }) {
     return (
         <div className="Cardcomp">
-        <div className="our-team  h-[27rem] ml-[20px] ">
+        <div className="our-team  h-[27rem] mx-auto ">
           <div className="picture">
           <img className="img-fluid h-[inherit] w-[inherit] " src={content.imgUrl} />
           </div>
