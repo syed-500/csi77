@@ -1,0 +1,166 @@
+/* Design inspiration:  https://dribbble.com/shots/1978243-Latest-News */
+
+
+#card5{
+    box-shadow: 10px 5px 40px 16px darken(purple, 5%);
+    border-radius: 20px;
+
+
+ width:220px;
+ display: block;
+ margin: 70px auto;
+ // box-shadow: 10px 5px 40px 20px darken(#361ac1, 5%);
+ transition: .25s;
+
+ &:hover {
+  transform: scale(1.2);
+   box-shadow: 10px 5px 40px 20px darken(#440b5c, 5%);
+   cursor: pointer;
+   border: 1px solid greenyellow;
+   .button-primary {
+     transform: translate(10px, 0);
+   }
+ }
+}
+
+.card-header {
+ height: 150px;
+ width: 100%;
+ padding: 15px;
+ width:100%;
+ background-size:cover;
+ color:#937c7c;
+}
+
+.card-header--title {
+ 
+ margin-left: 10px;
+}
+
+#cardb {
+ padding: 20px;
+ padding-bottom: 10px;
+ // background-color:#1a0c1a;
+ background-color:#161711;
+ width:220px;
+ height: 180px;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ border-bottom-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ color: white;
+
+}
+
+.date {
+ font-size: 11px;
+ font-weight: 600;
+ color: rgb(205, 181, 181);
+}
+
+#cardc {
+ padding-bottom: 24px;
+ font-size: 10px;
+ line-height: 1.5;
+ border-bottom-right-radius: 20px;
+ color: white;
+
+}
+
+.button-primary {
+ border: none;
+ box-shadow: none;
+ font-family: inherit;
+ background-color:transparent;
+ color: rgb(210, 171, 175);
+ font-size: 15px;
+ transition:.25s;
+ 
+ i{
+   padding-right:4px;
+ }
+}
+
+
+.designer-link {
+ color:#fff;
+ text-align:center;
+ font-size: 12px;
+ text-decoration: none;
+ display:block;
+}
+
+@media only screen and (max-width:576px) {
+   
+   .card8 {
+       width:300px;
+       display: block;
+       margin: 60px auto;
+       transition: .25s;
+       
+       &:hover {
+         box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
+         cursor: pointer;
+         
+         .button-primary {
+           transform: translate(10px, 0);
+         }
+         transform: scale(1.2);
+       }
+     }
+     
+     .card-header {
+       height: 150px;
+       width: 100%;
+       padding: 15px;
+       width:100%;
+       background-size:cover;
+       color:#fffbfb;
+     }
+     
+     .card8-header--title {
+       text-transform: uppercase;
+       margin: 0;
+     }
+     
+     .card8-body {
+       padding: 15px;
+       background-color:#240b0b;
+       width:100%;
+     }
+     
+     .date {
+       font-size: 11px;
+       font-weight: 600;
+       color: rgb(205, 181, 181);
+     }
+     
+     .body-content1 {
+       padding-bottom: 20px;
+       font-size: 13px;
+       line-height: 1.5;
+     }
+     
+     .button-primary {
+       border: none;
+       box-shadow: none;
+       font-family: inherit;
+       background-color:transparent;
+       color: rgb(214, 82, 93);
+       font-size: 15px;
+       transition:.25s;
+       
+       i{
+         padding-right:4px;
+       }
+     }
+     
+     
+     .designer-link {
+       color:#645252;
+       text-align:center;
+       font-size: 12px;
+       text-decoration: none;
+       display:block;
+     }
+   
+}

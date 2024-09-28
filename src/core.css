@@ -1,0 +1,24 @@
+#coreid:hover{
+    transform: scale(1.07);
+    border: 2px solid rgb(255, 98, 74);
+    height: 110%;
+    /* background-color: rgb(166, 150, 127); */
+    background-color: #5c5454;
+}
+#coreid{
+    /* border: 1px solid rgb(223, 187, 96); */
+    border: 1px solid rgb(110, 110, 163);
+    
+    border-radius:25px ;
+    padding: 10px;
+    /* background-color: rgb(131, 119, 103); */
+    background-color: rgb(68, 66, 66);
+    margin-left: 30px;
+     /* background-color: rgb(134, 126, 116);  */
+     /* background-color: rgb(129, 87, 105); */
+}
+@media only screen and (max-width: 576px) {
+#coreid{
+    width: 76%;
+
+}}
