@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import Cards from './EvCards';
-import displayData from './Data';
+import displayData from './Data1';
 import '../events.css';
 const Eventspage = () => {
     const DataToDisplay = displayData.map((event) => (
