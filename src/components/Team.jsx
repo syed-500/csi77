@@ -87,20 +87,20 @@ const Team = ({ teamMembers }) => {
     // )
     return (
       <>
-      <div className='w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25 mr-auto '>
+      <div className='w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25  '>
         <Header />
         <br />
         <br />
-        <div className='flex justify-center mt-10 py-10'>
+        <div className='flex justify-center mt-10 py-10 sm:ml-25'>
           <h1 className="text-[40px] sm:text-[55px] md:text-[80px] text-center text-white leading-tight font-poppins font-bold">
             TEAM CSI <br /> 2023-2024
           </h1>
         </div>
         <div className='h-18 bg-white'></div>
         <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='our__team mb-[60px] mx-auto h-full w-full sm:w-[70%] md:w-[85%] lg:w-[100%]'>
+        <section className='our__team mb-[60px] sm:mx-10 mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
           <div className='container'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:m-auto gap-10 gap-y-10 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10 mb-16">
               {/* mapping over each of the cards with content  */}
               {teamMembers.map((content, index) => (
                 <Card key={index} content={content} />
@@ -124,7 +124,7 @@ const Team = ({ teamMembers }) => {
 function Card({ content }) {
     return (
         <div className="Cardcomp">
-        <div className="our-team  h-[27rem] mx-auto ">
+        <div className="our-team  h-[27rem] mx-10 ">
           <div className="picture">
           <img className="img-fluid h-[inherit] w-[inherit] " src={content.imgUrl} />
           </div>
