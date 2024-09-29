@@ -124,7 +124,7 @@ const Team = ({ teamMembers }) => {
 function Card({ content }) {
     return (
         <div className="Cardcomp">
-        <div className="our-team  h-[27rem] mx-10 ">
+        <div className="our-team  h-[27rem] ml-[25px] md:mx-auto lg:mx-auto ">
           <div className="picture">
           <img className="img-fluid h-[inherit] w-[inherit] " src={content.imgUrl} />
           </div>
