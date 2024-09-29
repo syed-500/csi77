@@ -98,7 +98,7 @@ const Team = ({ teamMembers }) => {
         </div>
         <div className='h-18 bg-white'></div>
         <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='our__team mb-[60px] sm:mx-10 mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
+        <section className='our__team mb-[60px] sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
           <div className='container'>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10 mb-16">
               {/* mapping over each of the cards with content  */}
