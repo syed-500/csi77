@@ -349,24 +349,27 @@ const ExecomTeam = () => {
 
   return (
     <>
-    <Header />
-    <br></br>
-    <section className='our__team1 w-[520px] sm:w-[250px] md:w-[1300px] '>
-      {/* Tech */}
-      <div className='container mb-10 '>
-      <div className='flex gap-3 pb-12 align-center justify-center flex-wrap'>
-        {ItemButton.map((item) => <ButtonReq key={item} handleObj={handleObj} item={item} isActive={item === isActive} /> )}
-      
-      </div>
-        {/* <h1 className='text-white text-center pb-12 text-[2rem]'>TECH</h1> */}
-        <div className='team__wrapper1 ' >
-          {
-            Obj.map((item) => (
+      <section className=" our__team1 mx-auto p-5 w-full max-w-[1100px]">
+        {/* Tech */}
+        <div className="lg:ml-[80px] container mb-10">
+          <div className="flex gap-3 pb-12 align-center justify-center flex-wrap">
+            {ItemButton.map((item) => (
+              <ButtonReq
+                key={item}
+                handleObj={handleObj}
+                item={item}
+                isActive={item === isActive}
+              />
+            ))}
+          </div>
+
+          {/* Team Cards */}
+          <div className="team__wrapper1 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {Obj.map((item) => (
               <ExeCard key={Math.random()} item={item} />
-            )) 
-          }
+            ))}
+          </div>
         </div>
-      </div>
       </section>
     </>
   );

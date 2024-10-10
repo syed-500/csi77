@@ -5,19 +5,6 @@ Window.React = React
 import Header from './Header';
 import ExecomTeam from './Execom';
 import '../../src/style.css';
-import Maaz from '../assets/Gb/Maaz.jpeg';
-import Mannan from '../assets/Gb/Mannan.png';
-//import Ahmed from '../assets/Gb/Ahmed.heif';
-import AhmedCC from '../assets/Gb/AhmedCC.jpg';
-import AhmeHussaini from '../assets/Gb/Ahmed Hussain.jpeg';
-import Mehveen from '../assets/Gb/Mehveen.jpg';
-import Rania from '../assets/Gb/Rania.jpeg';
-import Rasheed from '../assets/Gb/Rasheed.jpeg';
-import Raushaan from '../assets/Gb/Raushaan.jpeg';
-import Rayyan from '../assets/Gb/Rayyan.jpg';
-import Shafi from '../assets/Gb/Shafi.jpeg';
-import Shakaib from '../assets/Gb/Shakaib.jpg';
-import Taufeeq from '../assets/Gb/Taufeeq.jpeg';
 // import { position } from '@chakra-ui/react';
 import LinkdinLogo from "../assets/social-logo/icons8-linkedin-50.png"
 import GithubLogo from "../assets/social-logo/icons8-github-50.png"
@@ -54,53 +41,22 @@ const YourComponent = () => {
 
 
 const Team = ({ teamMembers }) => {
-    // return (
-    //     <div className=' w-[520px] sm:w-[1200px] md:w-[1300px] ml-[100px]'>
-    //         <Header />
-    //         <br>
-    //         </br>
-    //         <br></br>
-    //         <div className='flex justify-center ml-30 mt-10 py-10 '>
-    //                 <h1 className=" text-[55px]  sm:text-[80px] text-center text-white leading-[80px]  flex-1 font-poppins font-bold">
-    //                     TEAM CSI <br /> 2023-2024
-    //                 </h1>
-    //         </div>
-    //         <div className='h-18 bg-white'>
-
-    //         </div>
-    //         <h1  className='flex ml-5 items-center justify-center my-10 text-[50px]'>GB 23-24</h1>
-    //         <section className='our__team mb-[120px] mr-[200px]  ml-[100px] w-[520px] sm:w-[1200px] md:w-[1300px]'>
-    //             <div className='container'>
-    //                 <div className="row">
-    //                     {/* mapping over each of the cards with content  */}
-    //                     {teamMembers.map((content, index) => (
-    //                         <Card key={index} content={content} />))}
-    //                 </div>
-    //                 <div className='h-32'></div>
-    //             </div>
-    //         </section>
-    //         <h1 style={{ fontSize: "50px", textAlign:'center' }} className='pt-20 pb-10'> Execom 23-24</h1>
-    //         <ExecomTeam /> 
-
-
-    //     </div>
-    // )
     return (
       <>
-      <div className='w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25  '>
+      <div className=' w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25  '>
         <Header />
         <br />
         <br />
-        <div className='flex justify-center mt-10 py-10 sm:ml-25'>
+        <div className=' flex justify-center mt-10 py-10 sm:ml-25'>
           <h1 className="text-[40px] sm:text-[55px] md:text-[80px] text-center text-white leading-tight font-poppins font-bold">
             TEAM CSI <br /> 2023-2024
           </h1>
         </div>
         <div className='h-18 bg-white'></div>
         <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='our__team mb-[60px] sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
+        <section className='mb-[60px] sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
           <div className='container'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10">
               {/* mapping over each of the cards with content  */}
               {teamMembers.map((content, index) => (
                 <Card key={index} content={content} />
@@ -109,7 +65,7 @@ const Team = ({ teamMembers }) => {
             <div className='h-32'><br></br></div>
           </div>
         </section>
-        <h1 style={{ fontSize: "35px", textAlign: 'center' }} className='pt-20 pb-10 sm:text-[50px]'>Execom 23-24</h1>
+        <h1 style={{ fontSize: "35px", textAlign: 'center' }} className='mt-[-70px] lg:pt-20 pb-10 sm:text-[50px]'>Execom 23-24</h1>
        
       <ExecomTeam />
       </div>

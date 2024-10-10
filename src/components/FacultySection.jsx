@@ -11,8 +11,8 @@ import Card from "./FacultyCard2";
 
 const FacultySection = () => {
   return (
-    <Section id=" pt-10 pb-[-100px] " >
-      <div className="container  " id="faculty1">
+    <Section className="pt-10 " >
+      <div className="container " id="faculty1">
         {/* Heading */}
         <Heading
           title="Meet Our Faculty-Coordinator"

@@ -169,42 +169,42 @@ const GridGallery = () => {
   return (
     <>
       <Header />
-      <div style={{ marginTop: '120px', marginLeft: '50px', marginBottom: '60px' }}>
-        <h1 style={{ fontSize: '30px' }}>Photos</h1>
-      </div>
-      <div className='ml-7 mr-[-120px] min-[350]:mr-[-50px] sm:mr-[-350px] md:mr-[-470px] '>
 
-      <PhotoAlbum
-      
-        photos={photos}
-        layout="rows"
-        targetRowHeight={250}
-        // onClick={({ index: current }) => setIndex(current)}
-      />
-      <br />
-      <br />
-      <PhotoAlbum
-        photos={photos}
-        layout="rows"
-        targetRowHeight={250}
-        // onClick={({ index: current }) => setIndex(current)}
-      />
-      <br />
-      <br />
-      <br />
-      
-      <br />
-      <br />
-      
-      <Lightbox
-        index={index}
-        slides={photos}
-        open={index >= 0}
-        close={() => setIndex(-1)}
-      />
-        </div>
+      {/* Title Section */}
+      <div className='mt-[120px] ml-[30px] mb-[60px]'>
+        <h1 className='text-[30px]'>Photos</h1>
+      </div>
+
+      {/* Gallery Section */}
+      <div className='ml-2 sm:ml-0 sm:mr-0 md:mx-auto'>
+
+        {/* First PhotoAlbum */}
+        <PhotoAlbum
+          photos={photos}
+          layout="rows"
+          targetRowHeight={250}
+        />
+        <br /><br />
+
+        {/* Second PhotoAlbum */}
+        <PhotoAlbum
+          photos={photos}
+          layout="rows"
+          targetRowHeight={250}
+        />
+        <br /><br /><br />
+
+        {/* Lightbox */}
+        <Lightbox
+          index={index}
+          slides={photos}
+          open={index >= 0}
+          close={() => setIndex(-1)}
+        />
+      </div>
     </>
   );
 };
+
 
 export default GridGallery;
