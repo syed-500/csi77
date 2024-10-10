@@ -1,5 +1,5 @@
 import { check } from "../assets";
-import { pricing } from "../constants";
+import { pricing } from "../constants/public_objects";
 import Button from "./Button";
 
 const PricingList = () => {

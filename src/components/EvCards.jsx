@@ -1,7 +1,7 @@
 import React from 'react'
 import calendar from "../assets/event/calendar.png"
 import map from "../assets/event/map.png"
-import '../events.css'
+import '../css/events.css'
 
 const Content = ({title,date,loc,para,poster}) => {
   return (

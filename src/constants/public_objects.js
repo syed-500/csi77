@@ -24,10 +24,10 @@ import {
   raindrop,
   recording01,
   recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
+  // roadmap1,
+  // roadmap2,
+  // roadmap3,
+  // roadmap4,
   searchMd,
   slack,
   sliders04,
@@ -35,54 +35,11 @@ import {
   twitter,
   yourlogo,
 } from "../assets";
-import applelogo from "../assets/roadmap/apple.webp"
 import aig from '../assets/roadmap/aifin.jpg'
 import flutterevent from '../assets/roadmap/fluttter.jpg'
 import dataforge from '../assets/roadmap/data_forge_fusiion.jpg'
 import hackrev from '../assets/roadmap/hackathon.jpg'
 import stacksp from '../assets/roadmap/stack_spirint.jpg'
-// export const navigation = [
-//   {
-//     id: "0",
-//     title: "Home",
-//     url: "/#features",
-//   },
-//   {
-//     id: "1",
-//     title: "Team",
-//     url: "/team",
-//     onlyMobile:true
-//   },
-//   {
-//     id: "2",
-//     title: "Faculty",
-//     url: "/#how-to-use",
-//   },
-//   {
-//     id: "3",
-//     title: "Events",
-//     url: "/#roadmap",
-//   },
-//   {
-//     id: "4",
-//     title: "Gallery",
-//     url: "/gallery",
-//     onlyMobile: true,
-//   },
-//   {
-//     id: "5",
-//     title: "Sign in",
-//     url: "#login",
-//     onlyMobile: true,
-//   },
-//   {
-//     id: "6",
-//     title: "Contact",
-//     url: "/#contact",
-//     onlyMobile: true,
-//   }
-
-// ];
 
 export const navigation = [
   {

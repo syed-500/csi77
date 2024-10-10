@@ -75,8 +75,7 @@ const Pricing = () => {
           title="Contact Us"
         />  */}
 
-        <div className="relative">
-        </div>
+      
 
         <div className="flex justify-center mt-10">
           <a

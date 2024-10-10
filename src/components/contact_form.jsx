@@ -37,6 +37,7 @@ const ContactForm = () => {
       })
       .catch((err) => {
         // Submit the form manually
+
         e.target.submit();
       });
   };
@@ -52,8 +53,8 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="mt-10 mb-5 sm:ml-[200px] sm:mt-[-100px] sm:mb-[100px] sm:w-[900px] align-center border-zinc-900  flex flex-col items-center justify-center ">
-          <h1 className="text-5xl mb-[40px] ">Contact Us</h1>
+      <div className="lg:mt-[200px] mt-36 sm:mt-0 lg:mr-[100px]  mb-5 sm:ml-[200px] sm:mb-[100px] sm:w-inherit   align-center border-zinc-900  flex flex-col items-center justify-center ">
+          <h1 className="text-4xl sm:text-5xl mb-[40px] ">Contact Us</h1>
         <form
           className="text-white"
           action={FORM_ENDPOINT}
@@ -65,7 +66,7 @@ const ContactForm = () => {
               type="text"
               placeholder="Name"
               name="name"
-              className="focus:outline-none focus:ring relative w-[400px] sm:w-[700px] align-center px-3 py-3 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
+              className="focus:outline-none focus:ring relative  w-[300px] sm:w-[700px] align-center px-3 py-3 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
               required
             />
           </div>
@@ -74,7 +75,7 @@ const ContactForm = () => {
               type="email"
               placeholder="Email"
               name="email"
-              className="focus:outline-none focus:ring relative w-[400px] sm:w-[700px] align-center px-3 py-3 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
+              className="focus:outline-none focus:ring relative w-[300px] sm:w-[700px] align-center px-3 py-3 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
               required
             />
           </div>
@@ -82,7 +83,7 @@ const ContactForm = () => {
             <textarea
               placeholder="Your Phone No"
               name="phone"
-              className="focus:outline-none focus:ring relative overflow-hidden w-[400px] sm:w-[700px] align-center text-sm h-[50px] px-3 py-4 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
+              className="focus:outline-none focus:ring relative overflow-hidden w-[300px] sm:w-[700px] align-center text-sm h-[50px] px-3 py-4 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
               required
             />
           </div>
@@ -90,7 +91,7 @@ const ContactForm = () => {
             <textarea
               placeholder="Your Query"
               name="query"
-              className="focus:outline-none focus:ring relative w-[400px] sm:w-[700px] align-center h-[200px] px-3 py-3 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
+              className="focus:outline-none focus:ring relative w-[300px] sm:w-[700px] align-center h-[200px] px-3 py-3 text-sm placeholder-gray-400 bg-transparent border-2 rounded-xl shadow outline-none bg-gray-600"
               required
             />
           </div>

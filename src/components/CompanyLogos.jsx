@@ -1,4 +1,4 @@
-import { companyLogos } from "../constants";
+import { companyLogos } from "../constants/public_objects";
 
 const CompanyLogos = ({ className }) => {
   return (
