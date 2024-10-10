@@ -2,7 +2,7 @@ import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
+import { heroIcons } from "../constants/public_objects";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Generating from "./Generating";
@@ -10,7 +10,7 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import csiimg from '../assets/bg.jpg'
 import Counter from "./Counter";
-import  '../join.scss'
+import  '../css/join.scss'
 const Hero = () => {
   const parallaxRef = useRef(null);
   return (

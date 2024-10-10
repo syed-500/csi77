@@ -1,10 +1,10 @@
 import csilogo from "../assets/csilogo.webp"
 
-import { socials } from "../constants";
+import { socials } from "../constants/public_objects";
 
 const Footer = () => {
   return (
-    <footer className="mb-10 lg:ml-10 w-full p-0 ">
+    <footer className="mb-10lg:ml-10 w-full p-0 ">
   {/* we are using our <Section> over here to like make a sort of section over here  */}
   {/* this is the footer section and will be there in all pages  */}
     {/* <Section crosses className="" > */}
@@ -13,8 +13,8 @@ const Footer = () => {
             <img src={csilogo} width={100} height={100} alt="CSI Logo" className="mb-5"/>
             <div className="mb-3 mr-[65px]">
             <p>Student Co-ordinators Contacts</p>
-            <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-3" alt="" /></span>Maaz Ahmed: +91 7032826396</p> 
-            <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-3" alt="" /></span>Ahmed Khan :+91 7337522671</p>
+            <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-3" alt="" /></span>Abdul Rasheed : +91 7032826396</p> 
+            <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-3" alt="" /></span>Taufeeq Noamaan :+91 7337522671</p>
             <p className="mr-[60px]"><span><img src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" className="w-4 text-4xl  h-4 inline-block mr-3" alt="" /></span>csi@mjcollege.ac.in</p>
             </div>
             <p className="w-[340px] leading-6 text-md">Mount Pleasant, 8-2-249, Rd Number 3, Venkateshwara Hills, Banjara Hills, Hyderabad, Telangana 500034</p>

@@ -12,19 +12,17 @@ import Card from "./FacultyCard2";
 const FacultySection = () => {
   return (
     <Section className="pt-10 " >
-      <div className="container " id="faculty1">
+      <div className="w-screen" id="faculty1">
         {/* Heading */}
         <Heading
           title="Meet Our Faculty-Coordinator"
           text="Proudly managing the club for past 10 years"
         />
         {/* Box */}
-        <div className="pt-10 w-[30rem] mx-auto relative z-1 flex items-center h-[32rem] mb-5  border border-[#50ffaf] rounded-3xl overflow-hidden lg:p-20 xl:h-[36rem] bg-[#1e413196]" style={{ display: "flex", justifyContent: "space-between", alignItems: "center",flexDirection:'column' }}>
+        <div className="pt-10 lg:ml-96 sm:w-[30rem] ml-2 mr-2 mx-auto relative z-1 flex items-center h-[32rem] mb-5  border border-[#50ffaf] rounded-3xl overflow-hidden lg:p-20 xl:h-[36rem] bg-[#1e413196]" style={{ display: "flex", justifyContent: "space-between", alignItems: "center",flexDirection:'column' }}>
           <img
-            className="rounded-3xl mx-auto mt-0"
-            width={350}
+            className="rounded-3xl mx-auto mt-0 w-[350px] h-[400px] "
             alt="S"
-            height={400}
             src={pic1}
           />
           <div className=" max-w-[40rem] mx-auto mt-[30px] " >

@@ -1,9 +1,8 @@
 
-import React from 'react';
-import Header from './Header';
-import Cards from './EvCards';
-import displayData from './Data1';
-import '../events.css';
+import Header from '../components/Header';
+import Cards from '../components/EvCards';
+import displayData from '../components/Data1';
+import '../css/events.css';
 const Eventspage = () => {
     const DataToDisplay = displayData.map((event) => (
         <Cards

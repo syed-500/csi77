@@ -2,8 +2,8 @@
 
 import React from 'react';
 Window.React = React
-import Header from './Header';
-import ExecomTeam from './Execom';
+import Header from '../components/Header';
+import ExecomTeam from '../components/Execom';
 import '../../src/style.css';
 // import { position } from '@chakra-ui/react';
 import LinkdinLogo from "../assets/social-logo/icons8-linkedin-50.png"
@@ -11,7 +11,7 @@ import GithubLogo from "../assets/social-logo/icons8-github-50.png"
 import InstagramLogo from "../assets/social-logo/icons8-insta-50.png"
 
 const teamMembers = [
-    { imgUrl: "", name: "Rania Mehreen Farooq", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
+  { imgUrl: "", name: "Rania Mehreen Farooq", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
   { imgUrl: "", name: "Mohammed Abdul Rasheed", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
   { imgUrl: "", name: "Taufeeq Noamaan", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
   { imgUrl: "", name: "Muhammad Affan Asif", position: "Associate Chief Coordinator", linkedin: "", github: "", insta: "" },
