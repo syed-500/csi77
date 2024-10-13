@@ -2,15 +2,13 @@ import React from 'react';
 import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css'; // Make sure to import the Lightbox styles
-import Header from '../components/Header';
-import photos from '../constants/photos';
+import photos from '../../constants/photos';
 
 const GridGallery = () => {
   const [index, setIndex] = React.useState(-1);
 
   return (
     <>
-      <Header />
 
       {/* Title Section */}
       <div className='mt-[120px] ml-[30px] mb-[60px]'>

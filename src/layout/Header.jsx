@@ -1,12 +1,12 @@
 import { useLocation,Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import csilogo from "../assets/csilogo.webp"
-import { navigation } from "../constants/public_objects";
-import Button from "./Button";
-import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
+import Button from "../components/Button";
+// import  HamburgerMenu from "../../components/design/Header";
+import {HamburgerMenu} from "../components/design/Header"
 import { useState } from "react";
-
+import MenuSvg from "../assets/svg/MenuSvg";
+import {navigation} from "../constants/public_objects"
 
 const Header = () => {
   const pathname = useLocation();
@@ -47,7 +47,7 @@ const Header = () => {
             openNavigation ? "flex" : "hidden"
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:bg-transparent lg:items-center lg:justify-center`}
         >
-          <div className="lg:ml-[100px] flex flex-col lg:flex-row items-center justify-center gap-6">
+          <div className="bg-red-400  lg:ml-[150px] flex xl:ml-[300px] flex-col lg:flex-row items-center justify-center gap-6">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -84,7 +84,7 @@ const Header = () => {
           </div>
 
           {/* Hamburger Menu for Mobile */}
-          <HamburgerMenu />
+          <HamburgerMenu/>
         </nav>
 
         {/* CTA Button (Ask Anything) */}

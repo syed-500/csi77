@@ -1,5 +1,6 @@
 import csilogo from "../assets/csilogo.webp"
-
+import React from "react";
+window.React = React;
 import { socials } from "../constants/public_objects";
 
 const Footer = () => {

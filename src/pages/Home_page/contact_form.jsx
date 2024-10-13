@@ -32,12 +32,12 @@ const ContactForm = () => {
         if (!response.ok) {
           throw new Error('Form response was not ok');
         }
-
+        
         setSubmitted(true);
       })
       .catch((err) => {
         // Submit the form manually
-
+        console.log(err)
         e.target.submit();
       });
   };

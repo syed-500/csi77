@@ -96,7 +96,7 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
-export const roadmap = [
+export const Events = [
   {
     id: "0",
     title: "AI- FINITY",
@@ -340,3 +340,4 @@ export const socials = [
     url: "#",
   },
 ];
+

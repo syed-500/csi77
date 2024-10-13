@@ -9,14 +9,15 @@ import displayData from '../components/data';
 const Eventspage = () => {
     const DataToDisplay = displayData.map((event) => {
         return (
-          <Cards
-            key={event.id}
-            title={event.title}
-            date={event.date}
-            loc={event.loc}
-            poster={event.img}
-            para={event.para}
-          />
+          // <Cards
+          //   key={event.id}
+          //   title={event.title}
+          //   date={event.date}
+          //   loc={event.loc}
+          //   poster={event.img}
+          //   para={event.para}
+          // />
+          <CardEvents key={event.id}/>
         );
       });
 
@@ -31,6 +32,8 @@ const Eventspage = () => {
     </div>
   );
 }
+
+
 
 
 

@@ -17,27 +17,18 @@ class CardHeader extends React.Component {
   }
 }
 
-class Button extends React.Component {
-  render() {
-    return (
-      <button className="button button-primary ">
-        <i className="fa fa-chevron-right"></i> Find out more
-      </button>
-    )
-  }
-}
+
 
 class CardBody extends React.Component {
   render() {
     return (
-      <div className="card-body" id='cardb'>
+      <div className="card-body relative" id='cardb'>
         <p className="date">Faculty Coordinator</p>
         
         <h2 className=' ' style={{fontWeight:"bold",textAlign:"center" , fontFamily:"Poppins:300"}}>{this.props.title}</h2>
         
         <p className="body-content " id='cardc'>{this.props.text}</p>
         
-        <Button />
       </div>
     )
   }
