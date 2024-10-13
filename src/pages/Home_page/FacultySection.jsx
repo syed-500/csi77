@@ -12,9 +12,10 @@ import Card from "../../components/FacultyCard2";
 const FacultySection = () => {
   return (
     <Section className="pt-10 " >
-      <div className="w-screen" id="faculty1">
+      <div className="w-screen flex flex-col align-center justify-center" id="faculty1">
         {/* Heading */}
         <Heading
+          className = ""
           title="Meet Our Faculty-Coordinator"
           text="Proudly managing the club for past 10 years"
         />

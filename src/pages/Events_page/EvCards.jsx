@@ -4,11 +4,11 @@ import '../../css/events.css';
 
 const Content = ({ title, date, loc, para, poster }) => {
   return (
-    <div className="cards1-content">
+    <div className="cards1-content mx-10">
       <div className="cards1-outer-layer">
         <div className="cards1-img">
-          <div className="cards1i">
-            <img src={poster} alt="poster" className="poster-img" />
+          <div className="">
+            <img src={poster} alt="" className="overflow-hidden w-full object-cover" />
           </div>
         </div>
       </div>

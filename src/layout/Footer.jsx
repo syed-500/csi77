@@ -5,21 +5,21 @@ import { socials } from "../constants/public_objects";
 
 const Footer = () => {
   return (
-    <footer className="mb-10lg:ml-10 w-full p-0 ">
+    <footer className=" mb-10 w-full">
   {/* we are using our <Section> over here to like make a sort of section over here  */}
   {/* this is the footer section and will be there in all pages  */}
     {/* <Section crosses className="" > */}
-    <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start px-4 sm:px-10 lg:px-20 " style={{borderTop:"2px solid gray"}}>
+    <div className="container  mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start px-4 sm:px-10 lg:px-20 " style={{borderTop:"2px solid gray"}}>
         <div className=" ml-10 mb-[-40px] sm:mb-[50px] mt-10 flex flex-col items-left justify-center font-mono gap-3 bold " >
             <img src={csilogo} width={100} height={100} alt="CSI Logo" className="mb-5"/>
             <div className="mb-3 ">
             <div className="flex flex-col justify-items-start items-center ">
           {/*  the details of the cc'ss */}
-           <div className="flex flex-col mr-7 sm:mr-52"> 
+           <div className="flex flex-col mr-7 "> 
             <p className="mb-3 md:mr-52" >Student Co-ordinators Contacts</p>
-              <div className="flex flex-col md:mr-32 justify-items-start items-center gap-3 w-[300px] sm:w-[400px]  ">
-                  <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-2" alt="" /></span>Abdul Rasheed : +91 83280 05075</p>
-                  <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4 sm:ml-5  text-4xl h-4 inline-block mr-3" alt="" /></span>Taufeeq Noamaan : +91 72078 80860</p>
+              <div className="flex flex-col lg:pr-16 justify-items-start items-center gap-3 w-[350px] sm:w-[400px]  ">
+                  <p className='pr-[70px]'><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4 text-4xl h-4 inline-block" alt="" /></span>Rasheed: +91 83280 05075</p>
+                  <p className='pr-[70px]'><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4 text-4xl h-4 inline-block " alt="" /></span>Taufeeq: +91 72078 80860</p>
                   <p className='ml-[-90px] sm:mr-4'><span><img src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" className="w-4  text-4xl  h-4 inline-block mr-3" alt="" /></span>csi@mjcollege.ac.in</p>
               </div>
             </div>  
@@ -28,7 +28,7 @@ const Footer = () => {
             <p className="w-[340px] leading-6 text-md">Mount Pleasant, 8-2-249, Rd Number 3, Venkateshwara Hills, Banjara Hills, Hyderabad, Telangana 500034</p>
         </div>
         {/* this is the I card wala part  */}
-      <div className="mt-10 md:mt-0 lg:mt-0 g-slate-500 opacity-70 z-1 lg:mr-15">
+      <div className="mt-10 lg:pr-20 g-slate-500 opacity-70 z-1 lg:mr-56 ">
       <div className="relative">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6562222444213!2d78.44033307489522!3d17.42827810162643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90cd7708dfd7%3A0x77482b7aa8b696f3!2sMuffakham%20Jah%20College%20of%20Engineering%20%26%20Technology%20(MJCET)!5e0!3m2!1sen!2sin!4v1716881145691!5m2!1sen!2sin"

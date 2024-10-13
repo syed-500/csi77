@@ -18,8 +18,8 @@ const Eventspage = () => {
     ));
 
     return (
-        <div className="bg-cyan-700 eventsmain flex flex-col ">
-            <div className="bg-green-400 events-text-content">
+        <div className="eventsmain flex flex-col ">
+            <div className=" events-text-content">
                 <h2>Events</h2>
             </div>
             <div className='flex flex-col items-center justify-center mr-16 mb-24 mt-[-100px]'>
