@@ -1,13 +1,13 @@
-import Section from "./Section";
-import Heading from "./Heading"
-import sridevi from '../assets/team/sridevimam.jpg'
-import shab from '../assets/team/shabbeersir.jpg'
-import man from '../assets/team/manizamam.jpg'
-import pic1 from "../assets/services/Zain-sir.jpeg"
+import Section from "../../components/Section";
+import Heading from "../../components/Heading"
+import sridevi from '../../assets/team/sridevimam.jpg'
+import shab from '../../assets/team/shabbeersir.jpg'
+import man from '../../assets/team/manizamam.jpg'
+import pic1 from "../../assets/services/Zain-sir.jpeg"
 import {
   Gradient,
-} from "./design/Services";
-import Card from "./FacultyCard2";
+} from "../../components/design/Services";
+import Card from "../../components/FacultyCard2";
 
 const FacultySection = () => {
   return (

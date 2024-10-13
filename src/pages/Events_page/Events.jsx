@@ -1,18 +1,16 @@
 
-import Header from '../components/Header';
-import Content from '../components/cards';
+import Content from './cards';
 // import Cards from '../components/EvCards';
 // import displayData from '../components/Data1';
-import '../css/events.css';
+
 const Eventspage = () => {
     
 
     return (
-        <div className="eventsmain font-mono">
-            <Header />
-            <div className="events-text-content">
-                <h2>Events</h2>
-                    <div className='pt-10 flex flex-col gap-4 justify-center items-center mt-10 w-screen '>
+        <div className=" mt-32 font-mono ">
+           <div >
+                <h2 className="font-light text-center mt-2 text-[50px] lg:text-[75px]">Events</h2>
+                    <div className='pt-10 flex flex-col gap-[60px] justify-center items-center mt-10 w-screen '>
                         
                             {/* this is one card of the events  */}
                             

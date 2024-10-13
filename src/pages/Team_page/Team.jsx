@@ -2,15 +2,14 @@
 
 import React from 'react';
 Window.React = React
-import Header from '../components/Header';
-import ExecomTeam from '../components/Execom';
-import '../../src/style.css';
+import ExecomTeam from '../../components/Execom';
+import '../../style.css';
 // import { position } from '@chakra-ui/react';
-import LinkdinLogo from "../assets/social-logo/icons8-linkedin-50.png"
-import GithubLogo from "../assets/social-logo/icons8-github-50.png"
-import InstagramLogo from "../assets/social-logo/icons8-insta-50.png"
+import LinkdinLogo from "../../assets/social-logo/icons8-linkedin-50.png"
+import GithubLogo from "../../assets/social-logo/icons8-github-50.png"
+import InstagramLogo from "../../assets/social-logo/icons8-insta-50.png"
 
-const teamMembers = [
+const GovMembers = [
   { imgUrl: "", name: "Rania Mehreen Farooq", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
   { imgUrl: "", name: "Mohammed Abdul Rasheed", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
   { imgUrl: "", name: "Taufeeq Noamaan", position: "Chief Coordinator", linkedin: "", github: "", insta: "" },
@@ -32,8 +31,7 @@ const teamMembers = [
 const YourComponent = () => {
     return (
         <div>
-            <Header />
-            <Team teamMembers={teamMembers} />
+            <Team teamMembers={GovMembers} />
         </div>
     );
 };
@@ -43,8 +41,7 @@ const YourComponent = () => {
 const Team = ({ teamMembers }) => {
     return (
       <>
-      <div className=' w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25  '>
-        <Header />
+      <div className='bg-cyan-400 w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25  '>
         <br />
         <br />
         <div className=' flex justify-center mt-10 py-10 sm:ml-25'>
@@ -54,9 +51,9 @@ const Team = ({ teamMembers }) => {
         </div>
         <div className='h-18 bg-white'></div>
         <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='mb-[60px] sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
-          <div className='container'>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10">
+        <section className='mb-[60px] lg:mb-0 sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
+          <div className='container lg:ml-10'>
+            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10">
               {/* mapping over each of the cards with content  */}
               {teamMembers.map((content, index) => (
                 <Card key={index} content={content} />

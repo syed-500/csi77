@@ -10,55 +10,82 @@ const Tech = [
     imgUrl: "",
     name: "Ameena Begum",
     position: "Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Azim Moula",
     position: "Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Abdul Rafey Waleed",
     position: "Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Iqra Fatima",
     position: "Associate Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Syed Abdullah Ghouri",
     position: "Associate Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Haifa Nazeer",
     position: "Associate Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Syed Muqeem Ahmed",
     position: "Associate Head",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Amatul Ghani Noorain",
     position: "Member",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Shaik Faija",
     position: "Member",
-    Stream: "Tech"
+    Stream: "Tech",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -67,19 +94,28 @@ const Web = [
     imgUrl: "",
     name: "Maaz Waheed",
     position: "Head",
-    Stream: "Web"
+    Stream: "Web",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Shaik Sohail",
     position: "Head",
-    Stream: "Web"
+    Stream: "Web",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Aaqil Mohammed Adil Baig",
     position: "Head",
-    Stream: "Web"
+    Stream: "Web",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -88,37 +124,55 @@ const Events = [
     imgUrl: "",
     name: "Saniya Sultana",
     position: "Head",
-    Stream: "Events"
+    Stream: "Events",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Abdullah Yar Khan",
     position: "Head",
-    Stream: "Events"
+    Stream: "Events",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Anasullah",
     position: "Head",
-    Stream: "Events"
+    Stream: "Events",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Ahamadi Hareem",
     position: "Associate Head",
-    Stream: "Events"
+    Stream: "Events",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Iram Fatima",
     position: "Associate Head",
-    Stream: "Events"
+    Stream: "Events",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Moazzam Mukarram Shareef",
     position: "Associate Head",
-    Stream: "Events"
+    Stream: "Events",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -127,31 +181,46 @@ const Design = [
     imgUrl: "",
     name: "Syeda Noor Fatima",
     position: "Head",
-    Stream: "Design"
+    Stream: "Design",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Amatullah Ummamah",
     position: "Associate Head",
-    Stream: "Design"
+    Stream: "Design",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Abdul Haseeb Khan",
     position: "Associate Head",
-    Stream: "Design"
+    Stream: "Design",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Nusrah Khan",
     position: "Associate Head",
-    Stream: "Design"
+    Stream: "Design",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Afifa Firdous",
     position: "Associate Head",
-    Stream: "Design"
+    Stream: "Design",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -160,7 +229,10 @@ const Media = [
     imgUrl: "",
     name: "Md Atif Ali Khan",
     position: "Head",
-    Stream: "Media"
+    Stream: "Media",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -169,25 +241,37 @@ const Editorial = [
     imgUrl: "",
     name: "Mohammadi Fatima",
     position: "Head",
-    Stream: "Editorial"
+    Stream: "Editorial",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Omer Waheed Khan",
     position: "Head",
-    Stream: "Editorial"
+    Stream: "Editorial",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Maheeya Wajahat",
     position: "Associate Head",
-    Stream: "Editorial"
+    Stream: "Editorial",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Amina Hasanaath",
     position: "Associate Head",
-    Stream: "Editorial"
+    Stream: "Editorial",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -196,37 +280,55 @@ const HR = [
     imgUrl: "",
     name: "Rayyan Shaji Ansari",
     position: "Head",
-    Stream: "HR"
+    Stream: "HR",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Bater Ibrahim Khan",
     position: "Head",
-    Stream: "HR"
+    Stream: "HR",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Alimuddin",
     position: "Head",
-    Stream: "HR"
+    Stream: "HR",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Husna Begum",
     position: "Associate Head",
-    Stream: "HR"
+    Stream: "HR",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mir Danish Ahmed",
     position: "Associate Head",
-    Stream: "HR"
+    Stream: "HR",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Hasifa Ammara",
     position: "Associate Head",
-    Stream: "HR"
+    Stream: "HR",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -235,37 +337,55 @@ const Marketing = [
     imgUrl: "",
     name: "Salman Mohammed Arif",
     position: "Head",
-    Stream: "Marketing and Publicity"
+    Stream: "Marketing and Publicity",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Samiuddin",
     position: "Head",
-    Stream: "Marketing and Publicity"
+    Stream: "Marketing and Publicity",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Afra Ahmed",
     position: "Associate Head",
-    Stream: "Marketing and Publicity"
+    Stream: "Marketing and Publicity",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Rehmath Unnisa",
     position: "Associate Head",
-    Stream: "Marketing and Publicity"
+    Stream: "Marketing and Publicity",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Mohammed Abdul Wahab",
     position: "Associate Head",
-    Stream: "Marketing and Publicity"
+    Stream: "Marketing and Publicity",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Syeda Adeeba Maryam",
     position: "Associate Head",
-    Stream: "Marketing and Publicity"
+    Stream: "Marketing and Publicity",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -274,13 +394,19 @@ const Operations = [
     imgUrl: "",
     name: "Abdullah Hussain Shaikh",
     position: "Head",
-    Stream: "Operations"
+    Stream: "Operations",
+    linkdin : "",
+    github : "",
+    insta : ""
   },
   {
     imgUrl: "",
     name: "Sami Ahmed",
     position: "Head",
-    Stream: "Operations"
+    Stream: "Operations",
+    linkdin : "",
+    github : "",
+    insta : ""
   }
 ];
 
@@ -301,7 +427,7 @@ const ExecomTeam = () => {
 
   return (
     <>
-      <section className=" our__team1 mx-auto p-5 w-full max-w-[1100px]">
+      <section className="bg-red-900  our__team1 mx-auto p-5 w-full max-w-[1100px]">
         {/* Tech */}
         <div className="lg:ml-[80px] container mb-10">
           <div className="flex gap-3 pb-12 align-center justify-center flex-wrap">
