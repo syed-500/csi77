@@ -1,33 +1,32 @@
-
-import Content from './cards';
-// import Cards from '../components/EvCards';
-// import displayData from '../components/Data1';
-
+import Cards from './EvCards';
+import displayData from '../../constants/Data1';
+import '../../css/events.css';
+import random from "../../assets/csi-photos-events/20240427_105721.jpg"
 const Eventspage = () => {
-    
+        
+    const DataToDisplay = displayData.map((event) => (
+        <Cards
+            key={event.id}
+            title={event.title}
+            date={event.date}
+            loc={event.loc}
+            poster={random}
+            para={event.para}
+        />
+        
+   
+    ));
 
     return (
-        <div className=" mt-32 font-mono ">
-           <div >
-                <h2 className="font-light text-center mt-2 text-[50px] lg:text-[75px]">Events</h2>
-                    <div className='pt-10 flex flex-col gap-[60px] justify-center items-center mt-10 w-screen '>
-                        
-                            {/* this is one card of the events  */}
-                            
-                            <Content />
-                            <Content />
-                            <Content />
-                            <Content />
-                            <Content />
-                        {/* <div className='w-1/2 bg-red-500 '>
-                                dfhjbfs
-                        </div>   */}
-                    </div>
+        <div className="bg-cyan-700 eventsmain flex flex-col ">
+            <div className="bg-green-400 events-text-content">
+                <h2>Events</h2>
             </div>
-            
+            <div className='flex flex-col items-center justify-center mr-16 mb-24 mt-[-100px]'>
+            {DataToDisplay}
+            </div>
         </div>
     );
 };
 
 export default Eventspage;
-

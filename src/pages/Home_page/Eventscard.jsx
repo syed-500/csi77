@@ -1,7 +1,5 @@
 
-
-
-const Content = () => {
+const EventsCard = () => {
   return (
     <div className='w-[400px]'>
         <div className='rounded-t-3xl bg-white relative'>
@@ -21,4 +19,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default EventsCard

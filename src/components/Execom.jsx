@@ -427,9 +427,9 @@ const ExecomTeam = () => {
 
   return (
     <>
-      <section className="bg-red-900  our__team1 mx-auto p-5 w-full max-w-[1100px]">
+      <section className=" our__team1 mx-auto p-5 w-full max-w-[1100px]">
         {/* Tech */}
-        <div className="lg:ml-[80px] container mb-10">
+        <div className=" container mb-10">
           <div className="flex gap-3 pb-12 align-center justify-center flex-wrap">
             {ItemButton.map((item) => (
               <ButtonReq

@@ -10,13 +10,20 @@ const Footer = () => {
   {/* this is the footer section and will be there in all pages  */}
     {/* <Section crosses className="" > */}
     <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center sm:items-start px-4 sm:px-10 lg:px-20 " style={{borderTop:"2px solid gray"}}>
-        <div className=" ml-5 mb-[-40px] sm:mb-[50px] mt-10 flex flex-col items-left justify-center font-mono gap-3 bold " >
+        <div className=" ml-10 mb-[-40px] sm:mb-[50px] mt-10 flex flex-col items-left justify-center font-mono gap-3 bold " >
             <img src={csilogo} width={100} height={100} alt="CSI Logo" className="mb-5"/>
-            <div className="mb-3 mr-[65px]">
-            <p>Student Co-ordinators Contacts</p>
-            <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-3" alt="" /></span>Abdul Rasheed : +91 7032826396</p> 
-            <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-3" alt="" /></span>Taufeeq Noamaan :+91 7337522671</p>
-            <p className="mr-[60px]"><span><img src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" className="w-4 text-4xl  h-4 inline-block mr-3" alt="" /></span>csi@mjcollege.ac.in</p>
+            <div className="mb-3 ">
+            <div className="flex flex-col justify-items-start items-center ">
+          {/*  the details of the cc'ss */}
+           <div className="flex flex-col mr-7 sm:mr-52"> 
+            <p className="mb-3 md:mr-52" >Student Co-ordinators Contacts</p>
+              <div className="flex flex-col md:mr-32 justify-items-start items-center gap-3 w-[300px] sm:w-[400px]  ">
+                  <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4  text-4xl h-4 inline-block mr-2" alt="" /></span>Abdul Rasheed : +91 83280 05075</p>
+                  <p><span><img src="https://img.icons8.com/?size=100&id=9730&format=png&color=FFFFFF" className="w-4 sm:ml-5  text-4xl h-4 inline-block mr-3" alt="" /></span>Taufeeq Noamaan : +91 72078 80860</p>
+                  <p className='ml-[-90px] sm:mr-4'><span><img src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" className="w-4  text-4xl  h-4 inline-block mr-3" alt="" /></span>csi@mjcollege.ac.in</p>
+              </div>
+            </div>  
+            </div>
             </div>
             <p className="w-[340px] leading-6 text-md">Mount Pleasant, 8-2-249, Rd Number 3, Venkateshwara Hills, Banjara Hills, Hyderabad, Telangana 500034</p>
         </div>

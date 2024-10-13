@@ -30,7 +30,7 @@ const GovMembers = [
 
 const YourComponent = () => {
     return (
-        <div>
+        <div className=' items-center flex flex-col'>
             <Team teamMembers={GovMembers} />
         </div>
     );
@@ -41,19 +41,19 @@ const YourComponent = () => {
 const Team = ({ teamMembers }) => {
     return (
       <>
-      <div className='bg-cyan-400 w-full sm:w-[80%] md:w-[85%] lg:w-[85%] lg:ml-15 sm:ml-25  '>
+      <div className=' flex flex-col justify-center items-center h-full w-full sm:w-[80%] md:w-[85%] lg:w-[85%]  '>
         <br />
         <br />
-        <div className=' flex justify-center mt-10 py-10 sm:ml-25'>
+        <div className=' flex justify-center mt-10 py-10 '>
           <h1 className="text-[40px] sm:text-[55px] md:text-[80px] text-center text-white leading-tight font-poppins font-bold">
             TEAM CSI <br /> 2023-2024
           </h1>
         </div>
         <div className='h-18 bg-white'></div>
         <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='mb-[60px] lg:mb-0 sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
+        <section className='flex flex-col items-center justify-center lg:mb-0 sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
           <div className='container lg:ml-10'>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10">
+            <div className="ml-5 sm:ml-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:ml-25 gap-10 gap-y-10">
               {/* mapping over each of the cards with content  */}
               {teamMembers.map((content, index) => (
                 <Card key={index} content={content} />
