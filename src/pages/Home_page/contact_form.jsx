@@ -53,7 +53,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="lg:mt-[120px] mt-36 sm:mt-0 lg:mr-[130px]  mb-5 sm:ml-[200px] sm:mb-[100px] sm:w-inherit   align-center border-zinc-900  flex flex-col items-center justify-center ">
+      <div className="lg:mt-[120px]  mt-36 sm:mt-0 lg:mr-[130px]  mb-5 sm:ml-[200px] sm:mb-[100px] sm:w-inherit   align-center border-zinc-900  flex flex-col items-center justify-center ">
           <h1 className="text-4xl sm:text-5xl mb-[40px] ">Contact Us</h1>
         <form
           className="text-white"

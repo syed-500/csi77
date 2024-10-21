@@ -8,7 +8,7 @@ import displayData from '../../constants/Data1';
 
 const EventsCard = ({ title, description, date, host, poster }) => {
   return (
-    <div className="lg:ml-52 w-[400px] py-5 lg:w-[800px]">
+    <div className="lg:ml-52 pl-20 pr-20 mr-20  md:ml-40   w-[600px] sm:w-[800px] py-5 lg:w-[800px]">
       <div className="lg:h-[400px] h-[200px] rounded-t-3xl bg-white relative">
         <img 
           className="lg:h-[400px] h-[200px] w-full object-cover rounded-t-3xl" 
@@ -82,9 +82,16 @@ const EventsSlider = () => {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1374,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 2024,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -107,7 +114,7 @@ const EventsSlider = () => {
   };
 
   return (
-    <div className="mt-64">
+    <div className="mt-64 ">
       <Slider {...settings}>
         {displayData.map((event, index) => (
           <EventsCard 
