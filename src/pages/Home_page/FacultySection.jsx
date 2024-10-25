@@ -12,7 +12,8 @@ import Card from "../../components/FacultyCard2";
 const FacultySection = () => {
   return (
     <Section className="pt-10 " >
-      <div className="w-screen flex flex-col align-center justify-center" id="faculty1">
+    <>
+      <div className="mt-10 w-screen flex flex-col align-center justify-center" id="faculty1">
         {/* Heading */}
         <Heading
           className = ""
@@ -47,7 +48,8 @@ const FacultySection = () => {
   Professor,Dept. Of CSE"/>
 
   </div>
-      </Section>
+  </>
+  </Section>
   );
 };
 
