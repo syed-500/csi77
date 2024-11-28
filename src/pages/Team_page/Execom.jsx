@@ -1,8 +1,9 @@
-import '../css/execom.css'
-import defautPic from '../assets/execom-pics/default-avatar-icon-of-social-media-user-vector.jpg'
-import LinkdinLogo from "../assets/social-logo/whitelinkdin.png"
-import InstagramLogo from "../assets/social-logo/instawhite.png"
-import GithubWhite from "../assets/social-logo/icons8-githubwhite.png"
+import defautPic from '../../assets/execom-pics/default-avatar-icon-of-social-media-user-vector.jpg'
+import LinkdinLogo from "../../assets/social-logo/whitelinkdin.png"
+import InstagramLogo from "../../assets/social-logo/instawhite.png"
+import GithubWhite from "../../assets/social-logo/icons8-githubwhite.png"
+import Github from "../../assets/social-logo/github-mark-white.png"
+
 import { useState } from 'react'
 
 const Tech = [
@@ -353,15 +354,6 @@ const Marketing = [
   },
   {
     imgUrl: "",
-    name: "Afra Ahmed",
-    position: "Associate Head",
-    Stream: "Marketing and Publicity",
-    linkdin : "",
-    github : "",
-    insta : ""
-  },
-  {
-    imgUrl: "",
     name: "Rehmath Unnisa",
     position: "Associate Head",
     Stream: "Marketing and Publicity",
@@ -427,9 +419,10 @@ const ExecomTeam = () => {
 
   return (
     <>
-      <section className=" our__team1 mx-auto p-5 w-full max-w-[1100px]">
+      <section className="mx-auto p-5 w-full max-w-[1100px] overflow-x-hidden mt-8">
         {/* Tech */}
-        <div className=" container mb-10">
+        <div className="mb-10">
+          {/* Buttons Container */}
           <div className="flex gap-3 pb-12 align-center justify-center flex-wrap">
             {ItemButton.map((item) => (
               <ButtonReq
@@ -441,11 +434,13 @@ const ExecomTeam = () => {
             ))}
           </div>
 
-          {/* Team Cards */}
-          <div className="team__wrapper1 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {Obj.map((item) => (
-              <ExeCard key={Math.random()} item={item} />
-            ))}
+          {/* Team Cards Container */}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full max-w-[1200px]">
+              {Obj.map((item) => (
+                <ExeCard key={Math.random()} item={item} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -455,19 +450,55 @@ const ExecomTeam = () => {
 
 function ExeCard({ item }) {
   return (
-    <div className='card py-[15px] pt-[10px] '>
-      {/* <img className='pic-circle ml-[15px] mt-2' style={{objectFit:"initial"}} src={item.imgUrl} alt="random image" /> */}
-      <img className='pic-circle mt-4 ml-[55px]' style={{ objectFit: "initial" }} src={item.imgUrl === "" ? defautPic : item.imgUrl} alt="random image" />
-      <div className='flex flex-col gap-2 mt-1 py-[2px] px-[2px] align-middle justify-center ' style={{}}>
+    <div className='bg-[#1a1a1a] w-full max-w-[300px] mx-auto rounded-xl p-6 transform transition duration-300 hover:scale-105 shadow-xl'>
+      <div className='flex flex-col items-center'>
+        {/* Profile Image */}
+        <div className='w-32 h-32 sm:w-36 sm:h-36 overflow-hidden rounded-full mb-6 border-4 border-gray-700'>
+          <img 
+            className='w-full h-full object-cover'
+            src={item.imgUrl === "" ? defautPic : item.imgUrl} 
+            alt={item.name} 
+          />
+        </div>
 
-        <center>
-          <p className='text-[15px] mt-3'>{item.name}</p>
-          <button disabled className='mt-3 bg-white font-semibold px-3 py-2 rounded-2xl   text-black text-[13px] ' >{item.position}</button>
-        </center>
-        <div className='flex flex-row items-center mt-3 gap-5 pl-[65px]'>
-          <a href="" title="LinkedIn"><img className='w-6 ' src={LinkdinLogo} alt="LinkedIn Logo" /></a>
-          <a href="" title="GitHub"><img className='w-6 ' src={GithubWhite} alt="GitHub Logo" /></a>
-          <a href="" title="Instagram"><img className='w-6' src={InstagramLogo} alt="Instagram Logo" /></a>
+        {/* Content */}
+        <div className='text-center w-full'>
+          <h3 className='text-[16px] font-semibold mb-3 text-white'>{item.name}</h3>
+          <button disabled className='bg-white  font-semibold px-4 py-2 rounded-2xl text-gray-900 text-[13px] mb-4 border border-gray-700'>
+            {item.position}
+          </button>
+          
+          {/* Social Links */}
+          <div className='flex justify-center gap-6 mt-4'>
+            <a 
+              href={item.linkdin || "#"} 
+              className="transform transition hover:scale-110"
+              target="_blank" 
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
+              <img className='w-7' src={LinkdinLogo} alt="LinkedIn" />
+            </a>
+            <a 
+              href={item.github || "#"} 
+              className="transform transition hover:scale-110"
+              target="_blank" 
+              rel="noopener noreferrer"
+              title="GitHub"
+            >
+              <img className='w-7' src={Github
+              } alt="GitHub" />
+            </a>
+            <a 
+              href={item.insta || "#"} 
+              className="transform transition hover:scale-110"
+              target="_blank" 
+              rel="noopener noreferrer"
+              title="Instagram"
+            >
+              <img className='w-7' src={InstagramLogo} alt="Instagram" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

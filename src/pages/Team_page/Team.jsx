@@ -2,7 +2,7 @@
 
 import React from 'react';
 Window.React = React
-import ExecomTeam from '../../components/Execom';
+import ExecomTeam from './Execom';
 import '../../style.css';
 // import { position } from '@chakra-ui/react';
 import LinkdinLogo from "../../assets/social-logo/icons8-linkedin-50.png"
@@ -28,32 +28,34 @@ const GovMembers = [
   { imgUrl: "", name: "Mohammed Azeem Uddin Siddiqui", position: "Advisor of Student Affairs", linkedin: "", github: "", insta: "" }
 ];
 
-const YourComponent = () => {
+const Teamcomponent = () => {
     return (
-        <div className=' md:ml-0 w-full  flex flex-col justify-self-center items-end '>
-            <Team teamMembers={GovMembers} />
+        <div className=''>
+            <GBteam teamMembers={GovMembers} />
+            <ExecomTeam/>
         </div>
     );
 };
 
 
 
-const Team = ({ teamMembers }) => {
+const GBteam = ({ teamMembers }) => {
     return (
       <>
-      <div className=' flex flex-col sm:bg-slate-200 justify-center items-center h-full w-full sm:w-[80%] md:w-[85%] lg:w-[85%]  '>
+      {/* <div className=' flex flex-col sm:bg-slate-200 justify-center items-center h-full w-full bg-blue-300 sm:w-[80%] md:w-[85%] lg:w-[85%]  '> */}
+      <div className=''>
         <br />
         <br />
-        <div className=' flex justify-center items-center w-full mt-10 py-10  '>
+        <div className=' flex justify-center items-center w-full mt-10 py-10 '>
           <h1 className="text-[40px] sm:text-[55px]  md:text-[80px] text-center text-white leading-tight font-poppins font-bold">
             TEAM CSI <br /> 2023-2024
           </h1>
         </div>
-        <div className='h-18 bg-white'></div>
-        <h1 className='flex items-center justify-center my-10 text-[35px] sm:text-[50px]'>GB 23-24</h1>
-        <section className='flex flex-col items-center justify-center lg:mb-0 sm:mx-10  lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
-          <div className=' w-screen flex items-center justify-center h-full'>
-          <div className="mr-[100px] grid justify-between items-center 400 w-900px grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-20">
+        
+        <section className='flex flex-col items-center justify-center lg:mx-auto h-full w-full sm:w-[70%]  md:w-[85%] lg:w-[100%]'>
+          <h1 className='text-[35px] sm:text-[50px]'>GB 23-24</h1>
+          <div className=' w-screen flex items-center justify-center h-full mt-20'>
+          <div className=" grid justify-center grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-20">
               {/* mapping over each of the cards with content */}
               {teamMembers.map((content, index) => (
                 <Card key={index} content={content} />
@@ -64,14 +66,10 @@ const Team = ({ teamMembers }) => {
           </div>
         </section>
         <h1 style={{ fontSize: "35px", textAlign: 'center' }} className='mt-[-70px] lg:pt-20 pb-10 sm:text-[50px]'>Execom 23-24</h1>
-       
-      <ExecomTeam />
+        
       </div>
       </>
     )
-       
-  
-  
 }
 
 
@@ -111,4 +109,6 @@ function Card({ content }) {
     )
 }
 
-export default YourComponent;
+
+
+export default Teamcomponent;
