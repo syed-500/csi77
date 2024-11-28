@@ -36,19 +36,27 @@ const FacultySection = () => {
       </div>
       
       <Gradient />
-      <div className="flex flex-col sm:flex-row mb-[-200px]"  >
-  <Card id="s1"image={shab}   title="Dr. Syed Shabbeer Ahmad" 
-  text="
-  Professor,Dept. Of CSE"/>
-  <Card id="s1"image={man}   title="Dr. Maniza Hijab" 
-  text="
-  Professor,Dept. Of CSE"/>
-  <Card id="s1" image={sridevi}   title="Dr. K. Sridevi" 
-  text="
-  Professor,Dept. Of CSE"/>
-
-  </div>
-  </>
+      <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-20">
+        <Card 
+          id="s1"
+          image={shab}   
+          title="Dr. Syed Shabbeer Ahmad" 
+          text="Professor, Dept. Of CSE"
+        />
+        <Card 
+          id="s1"
+          image={man}   
+          title="Dr. Maniza Hijab" 
+          text="Professor, Dept. Of CSE"
+        />
+        <Card 
+          id="s1"
+          image={sridevi}   
+          title="Dr. K. Sridevi" 
+          text="Professor, Dept. Of CSE"
+        />
+      </div>
+    </>
   </Section>
   );
 };
